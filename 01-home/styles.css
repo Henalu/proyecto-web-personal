@@ -1,0 +1,144 @@
+/*Importar Fuentes*/
+@font-face {
+    font-family: "Pacifico";
+    src: url(fonts/Pacifico-Regular.ttf);
+}
+
+@font-face {
+    font-family: "Playfair";
+    src: url(fonts/Playfair/PlayfairDisplay-Regular.ttf);
+}
+
+/*Fin de importar fuentes*/
+
+/*Normas generales*/
+* {
+    text-decoration: none;
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+}
+
+body {
+    min-width: 1236px;
+    margin: 0px auto;
+}
+
+/*Inicio Limpieza de flotados*/
+.clearfix {
+    clear: both;
+}
+
+/*Fin Limpieza de flotados*/
+
+/*Inicio del Fondo*/
+video {
+    position: fixed;
+    z-index: -5;
+}
+/*Fin del Fondo*/
+
+/*Inicio del Header*/
+#cabecera {
+    display: block;
+    float: left;
+    margin-top: 90px;
+    margin-left: 90px;
+    width: 100%;
+}
+
+hgroup {
+    color: white;
+    font-family: "Pacifico";
+}
+
+hgroup h1 {
+    font-weight: 500;
+    font-size: 70px;
+    line-height: 75px;
+}
+
+hgroup h1 a{
+    cursor: grab;
+}
+
+hgroup>h1:hover{
+    color:rgb(253, 248, 241);
+    text-shadow: 1px 2px 30px white;
+}
+
+hgroup h2 {
+    font-weight: lighter;
+    font-size: 25px;
+    margin-top: 25px;
+}
+
+hgroup h2 a{
+    cursor: grab;
+}
+
+hgroup>h2:hover{
+    color:rgb(253, 248, 241);
+    text-shadow: 1px 2px 15px white;
+}
+
+/*Fin del Header*/
+
+/*Inicio del Menu*/
+nav {
+    display: block;
+    float: left;
+    margin-top: 35px;
+    margin-left: 90px;
+    font-family: "Playfair";
+}
+
+nav ul a li{
+    font-family: "Playfair";
+    font-size: 15px;
+    color: white;
+    border: 1px solid white;
+    padding: 10px 40px 10px 40px;
+    text-align: center;
+    margin: 0px 0px 10px 0px;
+}
+
+nav>ul>a>li:hover{
+    background-color: white;
+    color: black;
+}
+/*Fin del Menu*/
+
+/*Inicio del Footer*/
+footer {
+    display: block;
+    float: right;
+    font-size: 15px;
+    font-family: "Playfair";
+}
+
+footer p{
+    width: fit-content;
+    background-color: rgba(255, 255, 255, 0.467);
+    padding: 8px;
+    margin-top: 130px;
+    margin-bottom: 20px;
+    margin-right: 122px;
+    border-radius: 9px;
+}
+
+footer p:hover{
+    background-color: rgba(255, 255, 255, 0.726);
+    color: black;
+    border-radius: 4px;
+}
+
+footer p, a {
+    color: inherit;
+}
+
+footer a:hover{
+    color: #fdfbce;
+}
+
+/*Fin del Footer*/

@@ -1,0 +1,310 @@
+/*Importar Fuentes*/
+@font-face {
+    font-family: "Pacifico";
+    src: url(../00-fonts/Pacifico-Regular.ttf);
+}
+
+@font-face {
+    font-family: "Playfair";
+    src: url(../00-fonts/Playfair/PlayfairDisplay-Regular.ttf);
+}
+
+@font-face {
+    font-family: "Playfair-italic";
+    src: url(../00-fonts/PlayfairDisplay-Italic-VariableFont_wght.ttf);
+}
+
+/*Fin de importar fuentes*/
+
+/*Inicio Normas generales*/
+* {
+    margin: 0px;
+    padding: 0px;
+    text-decoration: none;
+    list-style: none;
+    color: black;
+    font-family: "Playfair";
+}
+
+body {
+    margin: 0px auto;
+    min-width: 1536px;
+    /*Para que al reducir pantalla siga teniendo borde del lado derecho*/
+}
+
+#contenedor-general {
+    margin-left: 150px;
+    margin-right: 150px;
+    min-width: 1236px;
+    /*Para que al reducir pantalla no se deforme*/
+    background-color: #fdfbce;
+}
+
+/*Fin Normas generales*/
+
+/*Inicio del Fondo*/
+video {
+    position: fixed;
+    z-index: -5;
+}
+
+/*Fin del Fondo*/
+
+/*Limpieza de flotados*/
+.clearfix {
+    clear: both;
+}
+
+/*Limpieza de flotados*/
+
+/*Inicio Cabecera*/
+header {
+    display: block;
+    float: left;
+    position: relative;
+    left: 1040px;
+    margin-top: 50px;
+}
+
+header h1 {
+    cursor: default;
+}
+
+header h1:hover {
+    text-decoration: underline;
+}
+
+/*Fin Cabecera*/
+
+/*Inicio Menu*/
+nav {
+    display: block;
+    float: left;
+    width: 100%;
+}
+
+#menu {
+    margin-left: 1100px;
+}
+
+#icono-menu {
+    width: 50px;
+    cursor: pointer;
+}
+
+nav ul a li {
+    font-size: 12px;
+    border: 1px solid black;
+    background-color: #fdfbce;
+    padding: 10px 40px 10px 40px;
+    text-align: center;
+    margin: 0px 10px 10px -35px;
+}
+
+/*Hover del Menu*/
+nav>ul>li>ul {
+    display: none;
+    position: absolute;
+}
+
+nav>ul>li:hover>ul {
+    display: block;
+}
+
+nav>ul>li:hover>img {
+    opacity: 0%;
+}
+
+a>li:hover {
+    background-color: black;
+    color: white;
+}
+
+/*Hover del Menu*/
+
+/*Fin Menu*/
+
+/*Inicio Contenido 1 - Foto Grande principal*/
+article#contenido1 p {
+    font-size: 55px;
+    color: white;
+    position: absolute;
+    width: 575px;
+    line-height: 85px;
+    margin-left: 77px;
+    margin-top: 70px;
+    font-family: "Playfair-italic";
+}
+
+article img {
+    width: 1236px;
+}
+
+/*Fin Contenido 1*/
+
+/*Inicio Contenido 2 - Momentos Inolvidables*/
+article#contenido2 {
+    margin: 77px;
+}
+
+article#contenido2 h2 {
+    display: block;
+    float: left;
+    width: fit-content;
+    font-size: 35px;
+    width: 200px;
+    cursor: default;
+    text-decoration: underline;
+    padding: 5px;
+}
+#contenido2 h2:hover {
+    background-color: #F8A519;
+    border-radius: 8px;
+}
+
+article#contenido2 p {
+    display: block;
+    float: left;
+    width: 325px;
+    margin-left: 45px;
+    margin-top: 45px;
+    font-size: 18px;
+    padding: 5px;
+}
+
+article#contenido2>p:hover{
+    background-color: #ffd07f;
+    border-radius: 8px;
+}
+
+#foto-longboard {
+    display: block;
+    float: left;
+    margin-left: 45px;
+    margin-top: 45px;
+}
+
+.foto-longboard img {
+    width: 454px;
+    height: 270px;
+}
+
+#foto-aereo {
+    display: block;
+    float: right;
+    margin-top: -200px;
+}
+
+.foto-aereo img {
+    width: 479px;
+    height: 270px;
+}
+
+article#contenido2 figcaption {
+    font-family: "Playfair-italic";
+    width: 280px;
+    margin-top: 15px;
+    text-align: center;
+}
+
+#foto-aereo figcaption {
+    margin-left: 100px;
+}
+
+#foto-longboard figcaption {
+    margin-left: 80px;
+}
+
+/*Fin Contenido 2*/
+
+/*Inicio Contenido 3 - Maniobras*/
+#contenido3 {
+    margin-left: 122px;
+    margin-right: 122px;
+    margin-top: 40px;
+}
+
+#contenido3 h2 {
+    display: block;
+    float: left;
+    margin-bottom: 50px;
+    margin-left: 412px;
+    font-size: 35px;
+    cursor: default;
+    text-decoration: underline;
+    padding: 5px;
+}
+
+#contenido3 h2:hover {
+    background-color: #F8A519;
+    border-radius: 8px;
+}
+
+#contenido3 h3:hover {
+    background-color: #F8A519;
+    border-radius: 8px;
+}
+
+.foto-layback img {
+    width: 454px;
+}
+
+.foto-reverse img {
+    width: 454px;
+}
+
+.foto-layback {
+    display: block;
+    float: left;
+}
+
+#contenido3 h3 {
+    font-size: 30px;
+    margin-bottom: 10px;
+    width: fit-content;
+    padding: 5px;
+}
+
+#contenido3 .texto {
+    width: 454px;
+    font-size: 20px;
+}
+
+.texto1 {
+    display: block;
+    float: right;
+    margin-top: 70px;
+}
+
+.texto2 {
+    display: block;
+    float: left;
+    margin-top: 140px;
+}
+
+.foto-reverse {
+    display: block;
+    float: right;
+    margin-top: 70px;
+}
+
+/*Fin Contenido 3*/
+
+/*Inicio del Footer*/
+footer {
+    display: block;
+    float: right;
+    font-size: 15px;
+    margin-top: 170px;
+    margin-right: 122px;
+}
+
+footer p {
+    margin-bottom: 20px;
+}
+
+footer a:hover {
+    color: #686A70;
+}
+
+/*Fin del Footer*/

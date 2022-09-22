@@ -1,0 +1,263 @@
+/*Importar Fuentes*/
+@font-face {
+    font-family: "Pacifico";
+    src: url(../00-fonts/Pacifico-Regular.ttf);
+}
+
+@font-face {
+    font-family: "Playfair";
+    src: url(../00-fonts/Playfair/PlayfairDisplay-Regular.ttf);
+}
+
+/*Fin de importar fuentes*/
+
+/*Inicio del Fondo*/
+video {
+    position: fixed;
+    z-index: -5;
+}
+
+/*Fin del Fondo*/
+
+/*Inicio Normas generales*/
+* {
+    margin: 0px;
+    padding: 0px;
+    text-decoration: none;
+    list-style: none;
+    color: black;
+    font-family: "Playfair";
+}
+
+body {
+    min-width: 1536px;
+    margin: 0px auto;
+}
+
+#contenedor-general{
+    margin-left: 150px;
+    margin-right: 150px;
+    min-width: 1236px; /*Para que al reducir pantalla no se deforme*/
+    background-color: #fdfbce;
+}
+
+
+/*Fin Normas generales*/
+
+/*Limpieza de flotados*/
+.clearfix {
+    clear: both;
+}
+
+/*Limpieza de flotados*/
+
+/*Inicio tamaño Fotos*/
+.surfista {
+    height: 470px;
+    width: 355px;
+}
+
+.tubo {
+    height: 200px;
+    width: 530px;
+}
+
+.reverse {
+    height: 355px;
+    width: 541px;
+}
+
+/*Fin tamaño Fotos*/
+
+/*Inicio Cabecera*/
+header {
+    display: block;
+    float: left;
+    position: relative;
+    left: 1040px;
+    margin-top: 50px;
+}
+
+header h1{
+    cursor: default;
+}
+
+header h1:hover{
+    text-decoration: underline;
+}
+
+/*Fin Cabecera*/
+
+/*Inicio Menu*/
+nav {
+    display: block;
+    float: left;
+    width: 100%;
+}
+
+#menu{
+    margin-left: 1100px;
+}
+
+#icono-menu {
+    width: 50px;
+    cursor: pointer;
+}
+
+nav ul a li {
+    font-size: 12px;
+    border: 1px solid black;
+    background-color: #fdfbce;
+    padding: 10px 40px 10px 40px;
+    text-align: center;
+    margin: 0px 10px 10px -35px;
+}
+    /*Hover del Menu*/
+    nav>ul>li>ul {
+        display: none;
+        position: absolute;
+    }
+
+    nav>ul>li:hover>ul{
+        display: block;
+    }
+
+    nav>ul>li:hover>img{
+        opacity: 0%;
+    }
+
+    a>li:hover{
+        background-color: black;
+        color: white;
+    }
+    /*Hover del Menu*/
+
+/*Fin Menu*/
+
+/*Inicio Contenido 1*/
+
+#feeling{
+    margin: 70px 122px 122px 122px;
+}
+
+#feeling h2:hover{
+    text-decoration: underline;
+    background-color: #F8A519;
+    border-radius: 8px;
+}
+
+#foto-surfista{
+    display: block;
+    float: left;
+}
+
+#texto-feeling{
+    display: block;
+    float: right;
+    width: 454px;
+    margin-top: 50px;
+    margin-right: 90px;
+}
+
+    #texto-feeling h2{
+        font-size: 35px;
+        margin-bottom: 10px;
+        cursor: default;
+        width: fit-content;
+        padding: 5px;
+    }
+
+    #texto-feeling p{
+        font-size: 20px;
+    }
+
+#foto-nosepick{
+    display: block;
+    float: right;
+    margin-top: 90px;
+}
+/*Fin Contenido 1*/
+
+/*Inicio Contenido 2*/
+
+#belleza{
+    margin: 70px 122px 122px 122px;
+}
+
+#texto-belleza{
+    display: block;
+    float: left;
+    width: 455px;
+}
+
+    #texto-belleza h2{
+        font-size: 35px;
+        margin-bottom: 10px;
+        cursor: default;
+        width: fit-content;
+        padding: 5px;
+    }
+
+    #belleza h2:hover{
+        text-decoration: underline;
+        background-color: #F8A519;
+        border-radius: 8px;
+    }
+
+
+    #texto-belleza p{
+        font-size: 20px;
+    }
+
+#foto-tubo{
+    display: block;
+    float: right;
+    width: 530px;
+}
+
+#foto-reverse{
+    display: block;
+    float:left;
+    width: 530px;
+    margin-top: 10px;
+}
+
+#belleza figcaption{
+    width: 50%;
+}
+
+#foto-tubo figcaption{
+    text-align: right;
+    margin-left: 260px;
+}
+
+figcaption h3{
+    font-size: 20px;
+    margin-bottom: 6px;
+}
+figcaption>h3:hover>a{
+    color:#686A70;
+}
+
+figcaption p{
+    font-size: 14px;
+}
+
+/*Fin Contenido 2*/
+
+/*Inicio Footer*/
+footer {
+    display: block;
+    float: right;
+    font-size: 15px;
+    margin-top: 170px;
+    margin-right: 122px;
+}
+
+footer p{
+    margin-bottom: 20px;
+}
+footer a:hover{
+    color: #686A70;
+}
+/*Fin Footer*/
